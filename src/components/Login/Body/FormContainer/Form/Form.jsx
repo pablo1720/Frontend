@@ -19,10 +19,6 @@ const Form = ({ onUserLogin, loginResponse }) => {
 
             if (loginResponse !== null && loginResponse !== undefined) {
                 if (loginResponse !== 200) {
-                    if (loginResponse === 204) {
-                        alert('Inicio de sesion extitoso.');
-                        navigate('/user-home');
-                    }
                     alert('Credenciales incorrectas.');
                 } else {
                     navigate('/user-home');
